@@ -1,4 +1,4 @@
-# SaveMore
+# EBuy
 
 A full-fledged e-commerce web application that supports features such as user registration, posting of products, add to cart, and payment options. It has two panels - one each for buyer and seller and performs CRUD (Create, Read, Update, Delete) operations on both panels.
 
