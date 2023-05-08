@@ -1,0 +1,328 @@
+/* label
+{
+  text-align: center;
+} */
+
+.loadingPage {
+  min-height: 100%;
+}
+
+.loading {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid gray;
+  border-bottom: 16px solid gray;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.admin-div {
+  padding: 5%;
+  /* box-shadow: rgb(0 0 0 / 50%) 0px 2px 4px; */
+}
+
+.store-name {
+  background-color: #dddddd;
+  text-align: center;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.store-name-h1 {
+  font-size: 5rem;
+}
+
+.store-logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8%;
+}
+
+.store-logo {
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.details-products {
+  background-color: #ededed;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-weight: bold;
+}
+.store-details {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.store-products {
+  margin-top: 8%;
+  align-items: center;
+}
+
+.store-product-div {
+  margin-top: 10%;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.store-detail-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.update-details-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  margin-bottom: -2%;
+}
+
+.your-products-heading {
+  font-size: 4rem;
+}
+
+.product-main-image {
+  width: 100%;
+  height: 50%;
+  border: 2px solid black;
+}
+
+/* Media Queries */
+
+/* @media screen and (min-width: 1281px) {
+  .store-logo {
+    top: 15rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .store-products {
+    margin-top: 12%;
+  }
+
+  .store-details {
+    margin-top: 12%;
+  }
+  .your-products {
+    margin: 0rem;
+    width: 100%;
+    position: absolute;
+    top: 19rem;
+    left: 52%;
+  }
+}
+
+@media screen and (width: 1280px) {
+  .your-products {
+    padding-left: 3.5rem;
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 990px) {
+  .your-products {
+    margin: 0rem;
+    width: 100%;
+    position: absolute;
+    top: 49rem;
+    left: 34%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 960px) {
+  .store-details {
+    margin-top: 20%;
+    margin-left: 15%;
+  }
+
+  .store-products {
+    margin-top: -7%;
+  }
+
+  .your-products {
+    margin: 0rem;
+    width: 100%;
+    position: absolute;
+    top: 52rem;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .store-logo {
+    top: 15rem;
+    left: 16rem;
+  }
+
+  .store-details {
+    margin-top: 20%;
+    margin-left: 15%;
+  }
+
+  .your-products {
+    margin: 0rem;
+    width: 100%;
+    position: absolute;
+    top: 160%;
+    left: 28%;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 700px) {
+  .your-products {
+    margin: 0rem;
+    width: 100%;
+    position: absolute;
+    top: 145%;
+    left: 23%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .your-products {
+    margin: 0rem;
+    width: 100%;
+    position: absolute;
+    top: 46rem;
+    left: 6rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .store-logo {
+    top: 14rem;
+    height: 100px;
+    width: 20%;
+    left: 37%;
+  }
+  .store-details {
+    margin-top: 15%;
+    padding-left: 10%;
+  }
+} */
+
+/* Product Info CSS*/
+
+.no-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-tray {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modals {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+}
+
+.modals-content {
+  margin: 15vh auto;
+  margin-bottom: 15vh;
+  padding: 8px;
+  border: 3px solid black;
+  width: 80%;
+  height: 80vh;
+  overflow: auto;
+  background-color: #f7dad9;
+}
+
+.modals-content-delete {
+  margin: 40vh auto;
+  margin-bottom: 15vh;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 45%;
+  height: 25vh;
+  overflow: auto;
+  background-color: #f7dad9;
+}
+
+/* The Close Button */
+.closes {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.closes:hover,
+.closes:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.admin-product-name {
+  text-align: center;
+  margin-top: 6%;
+  font-size: 4.5rem;
+  margin-bottom: 5%;
+}
+
+.delete-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 7%;
+}
+
+.modal-details-div-pad {
+  margin-top: 5%;
+}
+
+.modal-label {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.text-align {
+  text-align: left;
+}
+
+.modal-img-div {
+  margin-bottom: 8%;
+}
+
+.delete-btn-bt {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .modals-content-delete {
+    width: 60%;
+  }
+}

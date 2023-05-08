@@ -1,0 +1,23 @@
+.orders-div
+{
+    background-color: pink;
+    padding: 2%;
+    margin: 5%;
+}
+
+.orders h2{
+    color: white;
+    margin: 2% 0 1% 0;
+}
+
+.my-orders-head
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.order-image
+{
+    width: 50%;
+    margin-left: 13%;
+} 
